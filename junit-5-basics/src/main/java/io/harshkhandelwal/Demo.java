@@ -17,11 +17,11 @@ public class Demo {
 		
 		CloseableHttpClient httpclient = HttpClients.createDefault();
 		
-		//Create an HttpGet Object
+		// Create an HttpGet Object
 		
 		HttpGet httpget = new HttpGet(url);
 		
-		//Printing the method used
+		// Printing the method used
 	    
 		System.out.println("Request Type: "+httpget.getMethod());
 	      
@@ -30,7 +30,7 @@ public class Demo {
 
 		Scanner sc = new Scanner(httpresponse.getEntity().getContent());
 
-	      //Printing the status line
+	      // Printing the status line
 	      System.out.println(httpresponse.getStatusLine());
 	      while(sc.hasNext()) {
 	         System.out.println(sc.nextLine());
